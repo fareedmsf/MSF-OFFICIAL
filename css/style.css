@@ -2,44 +2,84 @@ body{
     margin: 0px;
     padding: 0px;
 }
-.nav{
-    height:100vh;
-    width:100vw;
-    background-image: url(../img/facebg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
 .nav ul{
     margin: 0px;
-    display: inline-block;
-    padding:20px;
-    color: black;
+    padding: 20px;
+    list-style-type: none;
+}
+.logo ul li{
+    color: white;
+    
+    font-size: 1.8em;
+    font-style: italic;
+}
+.menu ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.nav{
+    display: grid;
+    grid-template-columns:30% 70%;
+    grid-template-rows:70px;
+    color: whitesmoke;
     font-family: Brush Script MT;
     font-style: italic;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    
     
 }
-.nav-bar{
+.menu{
+    display: grid;
     text-align: right;
-}
-.nav-bar-sub{
-    text-align: left;
+    grid-template-columns:repeat(3,1fr);
 }
 
-
-.skill{
-    display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows:100vh;
-    text-align: center;
-    color: black;
-    font-family: Brush Script MT;
+.nav-wrapper{
+    background-image: url(../img/bg1\ \(1\).jpg);
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    color: white;
+    padding: 10%;
+    font-family:fantasy ;
     font-style: italic;
     font-weight: bold;
-    font-size: 1.5em;
-   
-  
+    font-size: 1.7em;
+    
+}
+.about-heading{
+    color: white;
+    font-family: Brush Script MT;
+    background-color: black;
+    opacity: 0.7;
+    text-align: center;
+    margin: 0px;
+}
+.abt-contant{
+    display: grid;
+    grid-template-columns: 30% 68%;
+    grid-template-rows: 300px;
+    padding: 20px;
+}
+.about-heading h1 {
+    margin: 0px;
+    padding: 10px;
+}
 
+.pic img{
+    padding:5px;
+    width:90%;
+    height: 200px;
+    box-shadow:1px 2px 4px rgba(0, 0, 0, .5);
+}
+.about{
+    text-align: center;
+    font-family: Brush Script MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
 }
