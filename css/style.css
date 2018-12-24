@@ -22,7 +22,7 @@ body{
     grid-template-columns:30% 70%;
     grid-template-rows:70px;
     color: whitesmoke;
- font-family:tw cen Mt;
+    font-family:tw cen Mt;
     font-style: italic;
     font-weight: bold;
     font-size: 1.7em;
@@ -83,7 +83,47 @@ body{
     font-weight: bold;
     font-size: 1.5em;
 }
-.portfolio{
-    text-align: center;
+.projects{
+    display:grid;
+    grid-template-columns: 20% 20% 20%;
+   place-content: center;
+
+}
+
+.pic proname{
+    padding:5px;
+    width:90%;
+    height: 200px;
+    box-shadow:1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+
+/*media query*/
+
+@media only screen and (max-width: 500px) { 
     
+.nav{
+    display: grid;
+    grid-template-columns:20% 60%;
+    grid-template-rows:50px;
+    color: whitesmoke;
+    font-family:tw cen Mt;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+    
+    
+}
+.menu{
+    display: grid;
+    text-align: right;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.logo ul li{
+    color: white;
+    
+    font-size: 1em;
+    font-style: italic;
+}
 }
