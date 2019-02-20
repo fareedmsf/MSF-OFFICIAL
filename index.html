@@ -4,30 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/libs/typed.js"></script>
     <script src="js/msf.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/facebg.jpg" type="image/gif" sizes="20x20">
     <title>Fareed@Official</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div id="home" class="wrapper">
         <div class="nav-wrapper">
         <div class="nav">
             <div class="logo">
                 <ul><li class="logo">MSF@Official</li></ul>
             </div>
             <div class="menu">
-                    <div> <ul><li><a href=""> Home</a></li></ul> </div>
-                    <div> <ul><li><a href=""> About</a></li></ul> </div>
-                    <div> <ul><li><a href=""> Contact</a></li></ul> </div>
+                    <div> <ul><li><a href="#about"> About Me</a></li></ul> </div>
+                    <div> <ul><li><a href="#project">Projects</a></li></ul> </div>
+                    <div> <ul><li><a href="#contact">Contact</a></li></ul> </div>
             </div>
         </div>
         <div class="container"></div>
     </div>
-    <div class="about-wrapper">
+    <div id="about" class="about-wrapper">
         <div class="about-heading"><h1>About me</h1></div>
         <div class="abt-contant">
             <div class="pic">
@@ -40,34 +54,148 @@
         </div>
     </div>
 
-    <div class="about-heading"><h1>Porjects</h1></div>
+    <div id="project" class="about-heading"><h1>Projects</h1></div>
     <div class="projects">
 
             <div class="pro1 card">
-                <div class="pic">
+                <div class="pic" onclick="openmodel()">
                     <img src="img/pro1.JPG" alt="">
-                    <div>patient monitor </div>
+                    <div class="center-align"><b> patient monitor </b></div>
                 </div>
             </div>
 
             <div class="pro1 card">
-                <div class="pic">
+                <div class="pic" onclick="openmodel1()">
                     <img src="img/pro2.jpg" alt="">
-                    <div>Telerehabitation</div>
+                    <div class="center-align"><b>Telerehabitation</b></div>
                 </div>
             </div>
 
             <div class="pro1 card">
-                <div class="pic">
+                <div class="pic" onclick="openmodel2()">
                     <img src="img/wifi.png" alt="">
-                    <div class="proname">iQuant wifi Module</div>
+                    <div class="center-align"><b>iQuant wifi Module<b></div>
                 </div>
             </div>
 
+            <div class="pro1 card">
+                <div class="pic" onclick="openmodel3()">
+                    <img class="center" src="img/ECG.png" alt="">
+                    <div class="center-align"><b>ECG Sens<b></div>
+                </div>
+            </div>
+            
+
     </div>
-     
+    </div>
+    <div id="contact" class="about-heading"><h1>Contact</h1></div>
+    <div class="col row">
+    <div class="col s6">
+     <div class="col s12" style="padding: 12px;">
+        <div class="col s6">
+            <img class="materialboxed" width="100%" src="img/dp.jpg">
+        </div>
+         <div class="col s6">
+            <b>Name: A.Mohamed Shaik Fareed</b> <br><br>
+            <b>Email: <p style="font-weight: normal"> shaikfareed456@gmail.com</p></b> 
+            <b>Phone:<p style="font-weight: normal"> 7708793813</p></b>
+            <b>Address: <p style="font-weight: normal">PO, K.Narayanapura, Kothanur, Bengaluru, Karnataka 560077</p></b> <br><br>
+        </div>
+     </div>
+    </div>
+
+
+    <div class="col s6">
+    <div class="bg" style="display:grid">
+    <form action="https://formspree.io/18cs701008@kristujayanti.com" method="POST">
+      <div style="display:grid;">
       
-     
+        <div class="card z-depth-5 contact" style="">
+
+            <div class="center-align">
+                <p>Contact Form</p>
+            </div>
+            <div>
+                <b>Name</b>
+                <input placeholder="Name" id="name" type="text" class="validate" name="name" ngModel >
+            </div>
+            <div>
+                <b>Email</b>
+                <input placeholder="Email" id="email" type="text" class="validate" name="email" ngModel >
+            </div>
+            <div>
+                <b>Organization</b>
+                <input placeholder="Organization" id="organization" type="text" class="validate" name="organization" ngModel >
+            </div>
+            <div>
+                <b>Add a message</b>
+                <!-- <input placeholder="Add a message"  type="text" style="height:200px" class="validate"> -->
+                <textarea placeholder="Add a message" id="message" type="text" name="message" ngModel ></textarea>
+            </div>
+            <div>
+                <div class="center-align">
+                    <button type="submit"  class="submit waves-effect waves-light btn-small" >Send
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    
     </div>
+    </form>
+</div>
+    
+</div>
+</div>
+
+<div class="footer center-align" style="height:50px;background-color:gray">
+    <p style="font-weight: normal">Copyright 2019-By shaik fareed</p>
+</dv>
+
+<div id="patient_monitor" title="Patient Monitor">
+<img src="img/patientmontor.png" style="width:500px" alt="">
+<li> It helps to monitor patient’s position and head-up angle.</li>
+<li>It visualize patient’s position and head-up angle in a table format.
+Responsive design.</li>
+<li>Google Firebase is used for data storage and authentication.</li>
+<li>Update table without refreshing page.</li>
+<li>Patient position has 3 indications and each will be represented using 3 colors:</li>
+
+<li>Green – When the position is normal and requires no change, from 0:00 to 1:45 hours</li>
+<li>Yellow – alerts when the position needs to be changes, from 1:45 to 2:00 hours</li>
+<li>Red – alerts when time has elapsed and patient position still not be changed, 2:00 hours and above</li>
+
+<li>Head up angle has 2 state and each will be either represented using green or red color:</li>
+Green – 30 degree and above it will be green   
+Red – below 30 degree it will red
+</div>
+
+
+<div id="Telerehabitation" title="Telerehabitation">
+<img src="img/tele.png" style="width:500px" alt="">
+<li>An Internet-of-Things enabled platform with sensors to measure various quantifiable parameters for physiotherapy has been developed.</li>
+<li>To supplement the lack of direct physiotherapist intervention, physiological signs are also monitored to spot common abnormalities and provide timely warnings through a user-friendly visualization.</li>
+<li>Integration of a game engine with the system keeps the individuals motivated against monotonous routines.</li>
+<li>Continuous therapist observation of the individuals is ensured throughout the session by means of logging real-time information on a cloud server.</li>
+<li>A graphical dashboard (Web Application) established on this server is accessible by the therapist from anywhere</li>
+</div>
+
+<div id="iQuant" title="iQuant WiFi">
+<img src="img/iquantwifi.png" style="width:500px" alt="">
+<li>Used C# wireless connection library called ‘Simple Wi-Fi’.</li>
+<li>Designed GUI in C#.Net in congestion with the above mentioned library.</li>
+<li>Tested with different Wi-Fi’s and Hotspot.</li>
+<li>Can integrate with other application to connect to the network without accessing Windows system control panels.</li>
+
+</div>
+
+<div id="Ecgsens" title="Ecgsens">
+    <img src="img/ecgsens.png" style="width:500px" alt="">
+    <li>This application is used to monitor patient ECG</li>
+    <li>D3 library  is used for Graph </li>
+    <li>Responsive Design</li>
+</div>
+
 </body>
 </html>

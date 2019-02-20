@@ -65,17 +65,33 @@ body{
     grid-template-rows: 300px;
     padding: 20px;
 }
+.contact{
+    padding:15px;
+}
+.contact-heading{
+    color: white;
+    font-family:tw cen Mt;
+    background-color: black;
+    opacity: 0.7;
+    text-align: center;
+    margin: 0px;
+}
 .about-heading h1 {
     margin: 0px;
     padding: 10px;
 }
+.pic{
+    display: grid;
+}
 
 .pic img{
+    justify-self: center;
     padding:5px;
     width:90%;
     height: 200px;
     box-shadow:1px 2px 4px rgba(0, 0, 0, .5);
 }
+
 .about{
     text-align: center;
     font-family:tw cen Mt;
@@ -125,5 +141,25 @@ body{
     
     font-size: 1em;
     font-style: italic;
+}}
+.contact_pic{
+   
+    box-shadow:1px 2px 4px rgba(0, 0, 0, .5); 
 }
+.footer{
+    display:grid;
+    background-color: darkgray;
 }
+
+
+.display-none {
+    display: none;
+  }
+  .fill {
+    display: block;
+    width: 100%;
+  }
+  textarea {
+    resize: vertical;
+  }
+  
