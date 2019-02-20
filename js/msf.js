@@ -97,4 +97,23 @@ function openmodel3(){
                     height: 500,
                     modal: true,
   });
+
+ 
+}
+
+function social1(){
+  // window.location.replace("https://www.facebook.com/shaik.fareed.9");
+  window.open('https://www.facebook.com/shaik.fareed.9', 'facebook');
+}
+function social2(){
+  // window.location.replace("https://www.instagram.com/m_s_f__f_a_r_e_e_d/");
+  window.open('https://www.instagram.com/m_s_f__f_a_r_e_e_d/', 'insta');
+}
+function social3(){
+  // window.location.replace("https://github.com/fareedmsf/");
+  window.open('https://github.com/fareedmsf/', 'github');
+}
+function social4(){
+  // window.location.replace("https://www.linkedin.com/in/shaik-fareed-028418118/");
+  window.open('https://www.linkedin.com/in/shaik-fareed-028418118/', 'linkedin');
 }
